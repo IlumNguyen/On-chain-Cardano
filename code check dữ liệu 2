@@ -1,0 +1,45 @@
+$project_id = "mainnetsO4iFPuoMFLG8bz8XqQLmDAszLuKOHyn"
+
+$url = "https://cardano-mainnet.blockfrost.io/api/v0/metadata/txs/labels?project_id=$project_id"
+
+$headers = @{
+    "accept" = "application/json"
+    "content-type" = "application/json"
+}
+
+$response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $body
+
+# Extract relevant information from the response
+$time = $time
+$height = $height
+
+# Create the formatted text
+$text = "<b>Dạ! thông tin sếp cần đây ạ $emoji</b>`n"
+# $text += "Pool: $delegatedPool`n"
+
+$text += "<b>Tổng số dư</b>: {0:N0} ADA`n" -f $time
+$text += "Tổng thưởng stake: {0:N0} ADA`n" -f $height
+
+# Display the formatted text
+Write-Output $text
+
+
+
+
+
+# Định nghĩa project_id
+$project_id = "mainnetsO4iFPuoMFLG8bz8XqQLmDAszLuKOHyn"  # Thay YOUR_PROJECT_ID bằng project_id của bạn
+
+# Xây dựng URL
+$url = "https://cardano-mainnet.blockfrost.io/api/v0/accounts/stake1u9uz4j024qfud557ucrqw3kqfdndjgaxj7m44x7tamkvmyqzdwe7v"
+
+# Tạo header với project_id
+$headers = @{
+    "project_id" = $project_id
+}
+
+# Gửi yêu cầu
+$response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
+
+# Hiển thị response
+$response
