@@ -45,3 +45,4 @@ $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
 $response
 
 //code hiện tại vẫn đang hoạt động tốt
+// thị trường đang biến động
