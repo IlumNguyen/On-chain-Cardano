@@ -45,11 +45,4 @@ $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
 $response
 
 //code hiện tại vẫn đang hoạt động tốt
-// thị trường đang biến động
-//đang đi sideway
-//tiep tuc sideway 05.04.2024
-//btc just hit 72k again
-//big dump is coming
-//16.04.24
-//23.04.2024
-//29.04.2024
+05.05.2024
