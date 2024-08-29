@@ -44,13 +44,4 @@ $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
 # Hiển thị response
 $response
 
-//code hiện tại vẫn đang hoạt động tốt
-// thị trường đang biến động
-//fed giữ nguyên lãi suất, giọng điệu bồ câu
-//vỏ sò tăng lại trên 70k, 26.03.24
-//ppii
-/fgfgfgdfg
-oiiou
-oiio
-fdfsd
-uyfeewrewr
+/ff
