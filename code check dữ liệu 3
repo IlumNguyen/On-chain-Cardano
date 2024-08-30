@@ -44,7 +44,4 @@ $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
 # Hiển thị response
 $response
 
-//code hiện tại vẫn đang hoạt động tốt
-05.05.2024
-ffdgklkljk
-iiuuy
+//tds
